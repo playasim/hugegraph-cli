@@ -10,14 +10,14 @@ public class HGCommand {
     @Parameter
     public List<String> params = Lists.newArrayList();
 
-    @Parameter(names = "-d", description = "Database name.Example:aoiRelation")
+    @Parameter(names = "-d", description = "Database name.")
     public String database;
 
     @Parameter(names = "-p", description = "port")
     public int port = 8080;
 
     @Parameter(names = {"-u", "-url"}, description = "host.Example:127.0.0.1")
-    public String url = "10.10.4.76";
+    public String url = "127.0.0.1";
 
     @Parameter(names = "-q", description = "germlin query script.")
     public String script;

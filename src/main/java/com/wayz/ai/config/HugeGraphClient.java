@@ -7,13 +7,12 @@ import com.baidu.hugegraph.structure.gremlin.ResultSet;
 
 public class HugeGraphClient {
 
-    private String hugeHost = "127.0.0.1";
-    private int hugePort = 8080;
-    private String hugeDb = "";
+    private String hugeHost;
+    private int hugePort;
+    private String hugeDb;
     private HugeClient hugeClient;
     private GremlinManager gremlin;
     private SchemaManager schemaManager;
-    //一次接口调用允许的最大wifi数量，一次过大，可能耗时返回、响应太慢
     public HugeGraphClient(String host, int port, String db) {
         this.hugeHost = host;
         this.hugePort = port;
